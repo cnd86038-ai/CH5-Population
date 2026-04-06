@@ -46,7 +46,9 @@ int main()
 	// loop to calculate population growth
 	for (int day = 1; day <= days; ++day)
 	{
-		population += population * (dailyincrease / 100);
 		cout << "Day " << day << ": " << population << endl;
+		population += population * (dailyincrease / 100);
 	}
+
+	return 0;
 }
