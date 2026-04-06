@@ -27,4 +27,14 @@ int main()
 		cout << "Daily increase must be a positive number. Please re-enter: ";
 		cin >> dailyincrease;
 	}
+
+	// Get number of days
+	cout << "Enter the number of days to simulate: ";
+	cin >> days;
+
+	while (days < 1)
+	{
+		cout << "Number of days must be at least 1. Please re-enter: ";
+		cin >> days;
+	}
 }
