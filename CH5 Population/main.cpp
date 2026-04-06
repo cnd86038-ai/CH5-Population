@@ -37,4 +37,16 @@ int main()
 		cout << "Number of days must be at least 1. Please re-enter: ";
 		cin >> days;
 	}
+
+	// Converting starting population to double for calculations
+	population = startingpopulation;
+
+	cout << "\npopulation growth\n";
+
+	// loop to calculate population growth
+	for (int day = 1; day <= days; ++day)
+	{
+		population += population * (dailyincrease / 100);
+		cout << "Day " << day << ": " << population << endl;
+	}
 }
